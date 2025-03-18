@@ -1,0 +1,237 @@
+body{
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(rgba(116, 116, 116, 0.1) 3px, transparent 1px),
+        linear-gradient(90deg, rgba(116, 116, 116, 0.1) 3px, transparent 1px);
+    background-size: 20px 20px; /* Adjust grid size */
+
+}
+
+nav{
+    background-color: rgba(255, 250, 93, 0.399);
+    text-align: center;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 2px;
+    display: block;
+    overflow: hidden;
+}
+
+nav li{
+    font-family: cursive;
+    float: right;
+    padding: 10px;
+    margin: 5px;
+    border: #000000 1px solid;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0%;
+    margin: 0px;
+    display: inline;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: large;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+nav li:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.25s;
+    scale: 1.05;
+    margin: 7px;
+    box-shadow: #000000 5px 5px 5px;
+}
+
+#atag{
+
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+    height: 2%;
+    padding: 0px;
+    margin-left: 3px;
+    transform: translateY(2px);
+    overflow: hidden;
+   
+}
+
+#tag{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+}
+
+nav span p{
+    font-family: cursive;
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    padding: 0.5%;
+    height: fit-content;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    float: left;
+
+}
+
+
+
+#home-content {
+    color: black;
+    display: inline-block;
+    font-family: cursive;
+    padding: 5px;
+    transform: translate(250%,5%);
+    border: #000000 1px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#home-content:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: #000000 5px 5px 5px;
+    border-radius: 15px;
+}
+
+#home-content2 {
+    color: black;
+    display: inline-block;
+    font-family: cursive;
+    padding: 5px;
+    transform: translate(200%,55%);
+    border: #000000 1px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#home-content2:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: #000000 5px 5px 5px;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    scale: 1.1;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    width: 40%; /* Reduce the width to half of the screen */
+    max-width: 400px; /* Optional: Set a max-width */
+    height: 500px; /* Reduce height */
+    position: absolute; /* Position it on the left */
+    left: 0; /* Attach to the left */
+    top: 50%; /* Move it down */
+    transform: translateY(-50%); /* Center it vertically */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    background-color: #000000;
+}
+
+.slides {
+    display: flex;
+    width: auto; /* 3 slides */
+    transition: transform 0.8s ease-in-out;
+}
+
+.slides:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    box-shadow: #000000 5px 5px 5px;
+    border-radius: 15px;
+}
+
+.slide {
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto; /* Adjusts dynamically */
+    aspect-ratio: 9 / 10 /* Ensures consistent height */
+}
+
+
+/* Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots (Indicators) */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.active {
+    background-color: white;
+}
